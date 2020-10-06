@@ -8,7 +8,7 @@ module.exports = function (email) {
     const domain = email.split('@').pop();
 
     // Is disposable ?
-    if (blacklist.indexOf(domain) !== -1) {
+    if (blacklist.includes(domain)) {
       reject(new Error('Disposable email address'));
 
     // Check DNS MX record
