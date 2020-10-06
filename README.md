@@ -1,8 +1,8 @@
-[![Version](https://img.shields.io/npm/v/@jellyfish-commuting/fetchjson)](https://www.npmjs.com/package/@jellyfish-commuting/fetchjson)
-[![Licence](https://img.shields.io/npm/l/@jellyfish-commuting/fetchjson)](https://en.wikipedia.org/wiki/MIT_license)
-[![Build](https://img.shields.io/travis/jellyfish-commuting/fetchjson)](https://travis-ci.org/github/jellyfish-commuting/fetchjson)
-[![Coverage](https://img.shields.io/codecov/c/github/jellyfish-commuting/fetchjson)](https://codecov.io/gh/jellyfish-commuting/fetchjson)
-[![Downloads](https://img.shields.io/npm/dt/@jellyfish-commuting/fetchjson)](https://www.npmjs.com/package/@jellyfish-commuting/fetchjson)
+[![Version](https://img.shields.io/npm/v/@jellyfish-commuting/risky-email)](https://www.npmjs.com/package/@jellyfish-commuting/risky-email)
+[![Licence](https://img.shields.io/npm/l/@jellyfish-commuting/risky-email)](https://en.wikipedia.org/wiki/MIT_license)
+[![Build](https://img.shields.io/travis/jellyfish-commuting/risky-email)](https://travis-ci.org/github/jellyfish-commuting/risky-email)
+[![Coverage](https://img.shields.io/codecov/c/github/jellyfish-commuting/risky-email)](https://codecov.io/gh/jellyfish-commuting/risky-email)
+[![Downloads](https://img.shields.io/npm/dt/@jellyfish-commuting/risky-email)](https://www.npmjs.com/package/@jellyfish-commuting/risky-email)
 
 __*for internal use only - Just draft idea to easily fetch API in our apps*__
 
