@@ -4,7 +4,7 @@
 [![Coverage](https://img.shields.io/codecov/c/github/jellyfish-commuting/risky-email)](https://codecov.io/gh/jellyfish-commuting/risky-email)
 [![Downloads](https://img.shields.io/npm/dt/@jellyfish-commuting/risky-email)](https://www.npmjs.com/package/@jellyfish-commuting/risky-email)
 
-__*for internal use only - Just draft idea to easily fetch API in our apps*__
+__*for internal use only - Draft idea to check trustworthiness of email account*__
 
 # isRiskyEmail
 Check if email is from disposable provider or has no DNS MX record
