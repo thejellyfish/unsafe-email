@@ -1,0 +1,46 @@
+{
+  "name": "@jellyfish-commuting/risky-email",
+  "description": "Check if email is risky (disposable provider or invalid DNS MX)",
+  "keywords": [
+    "email",
+    "disposable"
+  ],
+  "license": "MIT",
+  "author": "thejellyfish <the@jellyfish-commuting.com>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "codecov"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "codecov": "^3.7.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^25.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jellyfish-commuting/risky-email.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jellyfish-commuting/risky-email/issues"
+  },
+  "homepage": "https://github.com/jellyfish-commuting/risky-email#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ]
+  }
+}
