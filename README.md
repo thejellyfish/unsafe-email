@@ -23,12 +23,14 @@ npm install @jellyfish-commuting/risky-email
 ```javascript
 import isRiskyEmail from '@jellyfish-commuting/risky-email';
 
-// Diposable email -> Output "Risky email : Disposable email address"
+// Diposable email 
+// Output "Risky email : Disposable email address"
 isRiskyEmail('contact@yopmail.com')
   .then(() => console.log('Not risky'))
   .catch(error => console.log(`Risky email : ${error.message}`);
   
-// Non-existent domain -> Output "Risky email : queryMx ENOTFOUND no-mx-records-domain.com"
+// Non-existent domain 
+// Output "Risky email : queryMx ENOTFOUND no-mx-records-domain.com"
 isRiskyEmail('contact@no-mx-records-domain.com')
   .then(() => console.log('Not risky'))
   .catch(error => console.log(`Risky email : ${error.message}`);
