@@ -9,13 +9,13 @@ module.exports = function (email) {
 
     // Is disposable ?
     if (blacklist.includes(domain)) {
-      reject(new Error('Disposable email address'));
+      reject(new TypeError('Disposable email address'));
 
     // Check DNS MX record
     } else {
       dns.resolveMx(domain, (error, addresses) => (
         error
-          ? reject(error)
+          ? TypeError(error.message)
           : resolve(addresses)
       ));
     }
