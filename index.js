@@ -5,7 +5,7 @@ const blacklist = require('./blacklist');
 module.exports = function (email) {
   return new Promise((resolve, reject) => {
     // Timeout
-    setTimeout(() => reject(new Error('Timeout while checking email address')), 5000);
+    setTimeout(() => reject(new TypeError('Timeout while checking MX records')), 5000);
 
     // Extract domain
     const domain = email.split('@').pop();
