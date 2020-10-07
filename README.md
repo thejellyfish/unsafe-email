@@ -6,7 +6,7 @@
 
 __*for internal use only - Draft idea to check trustworthiness of email account*__
 
-# isRiskyEmail
+# risky-email
 Check if email is from disposable provider or has no DNS MX record
 
 ### Install
@@ -30,8 +30,8 @@ isRiskyEmail('contact@yopmail.com')
   .catch(error => console.log(`Risky email : ${error.message}`);
   
 // Non-existent domain 
-// Output "Risky email : queryMx ENOTFOUND no-mx-records-domain.com"
-isRiskyEmail('contact@no-mx-records-domain.com')
+// Output "Risky email : queryMx ENOTFOUND uvdxlnlo.com"
+isRiskyEmail('contact@uvdxlnlo.com')
   .then(() => console.log('Not risky'))
   .catch(error => console.log(`Risky email : ${error.message}`);
     
