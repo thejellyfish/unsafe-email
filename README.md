@@ -30,8 +30,8 @@ isRiskyEmail('contact@yopmail.com')
   .catch(error => console.log(`Risky email : ${error.message}`);
   
 // Non-existent domain 
-// Output "Risky email : queryMx ENOTFOUND uvdxlnlo.com"
-isRiskyEmail('contact@uvdxlnlo.com')
+// Output "Risky email : queryMx ENOTFOUND he-llo-w-orld.com"
+isRiskyEmail('contact@he-llo-w-orld.com')
   .then(() => console.log('Not risky'))
   .catch(error => console.log(`Risky email : ${error.message}`);
     
@@ -43,4 +43,4 @@ isRiskyEmail('contact@google.com')
 
 ### Return value
 
-Promise resolve with dns records or reject if risky email
+Promise resolved with the email or rejected by a TypeError
