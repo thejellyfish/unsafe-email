@@ -43,4 +43,4 @@ isRiskyEmail('contact@google.com')
 
 ### Return value
 
-Promise resolved with the email or rejected by a TypeError
+Promise resolved with the email or rejected if risky email
