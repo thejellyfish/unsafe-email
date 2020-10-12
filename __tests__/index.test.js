@@ -9,6 +9,8 @@ describe('risky-email', () => {
     isRiskyEmail('sample@jetable.net').catch(e => expect(e).not.toBeUndefined()),
   ]));
 
+  it('expect error for unknow domain', () => isRiskyEmail('sample@non-comp-any.fr').catch(e => expect(e).not.toBeUndefined()));
+
   it('expect valid email', () => Promise.all([
     isRiskyEmail('john.smith@gmail.com').then(addresses => expect(Array.isArray(addresses)).toBe(true)),
     isRiskyEmail('john.smith@gmx.net').then(addresses => expect(Array.isArray(addresses)).toBe(true)),
