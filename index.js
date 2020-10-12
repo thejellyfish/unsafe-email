@@ -17,9 +17,9 @@ module.exports = function (email) {
       const timer = setTimeout(() => reject(TypeError('Timeout while checking MX records')), 5000);
 
       // Try to resolve mx records
-      dns.resolveMx(domain, (error, addresses) => {
+      dns.resolveMx(domain, error => {
         clearTimeout(timer);
-        return error ? reject(TypeError(error.message)) : resolve(addresses);
+        return error ? reject(TypeError(error.message)) : resolve(email);
       });
     }
   });
