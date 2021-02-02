@@ -1,5 +1,5 @@
 {
-  "name": "@jellyfish-commuting/risky-email",
+  "name": "@jollie/risky-email",
   "description": "Check if email is risky (disposable provider or invalid DNS MX)",
   "keywords": [
     "email",
@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jellyfish-commuting/risky-email.git"
+    "url": "git://github.com/thejellyfish/risky-email.git"
   },
   "bugs": {
-    "url": "https://github.com/jellyfish-commuting/risky-email/issues"
+    "url": "https://github.com/thejellyfish/risky-email/issues"
   },
-  "homepage": "https://github.com/jellyfish-commuting/risky-email#readme",
+  "homepage": "https://github.com/thejellyfish/risky-email#readme",
   "publishConfig": {
     "access": "public"
   },

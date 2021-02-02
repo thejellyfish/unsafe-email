@@ -1,8 +1,8 @@
-[![Version](https://img.shields.io/npm/v/@jellyfish-commuting/risky-email)](https://www.npmjs.com/package/@jellyfish-commuting/risky-email)
-[![Licence](https://img.shields.io/npm/l/@jellyfish-commuting/risky-email)](https://en.wikipedia.org/wiki/MIT_license)
-[![Build](https://img.shields.io/travis/jellyfish-commuting/risky-email)](https://travis-ci.org/github/jellyfish-commuting/risky-email)
-[![Coverage](https://img.shields.io/codecov/c/github/jellyfish-commuting/risky-email)](https://codecov.io/gh/jellyfish-commuting/risky-email)
-[![Downloads](https://img.shields.io/npm/dt/@jellyfish-commuting/risky-email)](https://www.npmjs.com/package/@jellyfish-commuting/risky-email)
+[![Version](https://img.shields.io/npm/v/@jollie/risky-email)](https://www.npmjs.com/package/@jollie/risky-email)
+[![Licence](https://img.shields.io/npm/l/@jollie/risky-email)](https://en.wikipedia.org/wiki/MIT_license)
+[![Build](https://img.shields.io/travis/thejellyfish/risky-email)](https://travis-ci.org/github/thejellyfish/risky-email)
+[![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/risky-email)](https://codecov.io/gh/thejellyfish/risky-email)
+[![Downloads](https://img.shields.io/npm/dt/@jollie/risky-email)](https://www.npmjs.com/package/@jollie/risky-email)
 
 __*for internal use only - Draft idea to check trustworthiness of email account*__
 
@@ -12,16 +12,16 @@ Check if email is from disposable provider or has no DNS MX record
 ### Install
 
 ```bash
-yarn add @jellyfish-commuting/risky-email
+yarn add @jollie/risky-email
 ```
 or
 ```bash
-npm install @jellyfish-commuting/risky-email
+npm install @jollie/risky-email
 ```
 ### Usage
 
 ```javascript
-const revokeIfRiskyEmail = require('@jellyfish-commuting/risky-email');
+const revokeIfRiskyEmail = require('@jollie/risky-email');
 
 // Diposable email 
 // Output "Risky email : Disposable email address"
