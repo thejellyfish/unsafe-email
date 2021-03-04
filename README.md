@@ -21,22 +21,22 @@ npm install @jollie/risky-email
 ### Usage
 
 ```javascript
-const revokeIfRiskyEmail = require('@jollie/risky-email');
+const isRiskyEmail = require('@jollie/risky-email');
 
 // Diposable email 
 // Output "Risky email : Disposable email address"
-revokeIfRiskyEmail('contact@yopmail.com')
+isRiskyEmail('contact@yopmail.com')
   .then(() => console.log('Not risky'))
   .catch(error => console.log(`Risky email : ${error.message}`);
   
 // Non-existent domain 
 // Output "Risky email : queryMx ENOTFOUND he-llo-w-orld.com"
-revokeIfRiskyEmail('contact@he-llo-w-orld.com')
+isRiskyEmail('contact@he-llo-w-orld.com')
   .then(() => console.log('Not risky'))
   .catch(error => console.log(`Risky email : ${error.message}`);
     
 // Valid email -> Output "Not risky"
-revokeIfRiskyEmail('contact@google.com')
+isRiskyEmail('contact@google.com')
   .then(() => console.log('Not risky'))
   .catch(error => console.log(`Risky email : ${error.message}`);
 ```
