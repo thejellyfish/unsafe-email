@@ -9,17 +9,13 @@ module.exports = function (email) {
 
     // Is disposable ?
     if (blacklist.includes(domain)) {
-      const error = Error('Disposable email address');
-      error.code = 'DISPOSABLE_EMAIL';
-      reject(error);
+      reject(TypeError('Disposable email address'));
 
     // Check DNS MX record
     } else {
       // Timeout
       const timer = setTimeout(() => {
-        const error = Error('Timeout while checking MX records');
-        error.code = 'RESOLVEMX_TIMEOUT';
-        reject(error);
+        reject(TypeError('Timeout while checking MX records'));
       }, 5000);
 
       // Try to resolve mx records
@@ -28,10 +24,7 @@ module.exports = function (email) {
 
         // Reject ?
         if (err) {
-          const error = Error(err.message);
-          error.code = 'NOMX_RECORD';
-
-          reject(error);
+          reject(TypeError(err.message));
 
         // ... resolve
         } else {
