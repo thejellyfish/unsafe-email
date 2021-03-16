@@ -1,6 +1,6 @@
 {
-  "name": "@jollie/risky-email",
-  "description": "Check if email is risky (disposable provider or invalid DNS MX)",
+  "name": "@jollie/unsafe-email",
+  "description": "Check if email is unsafe (disposable provider or invalid DNS MX)",
   "keywords": [
     "email",
     "disposable"
@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thejellyfish/risky-email.git"
+    "url": "git://github.com/thejellyfish/unsafe-email.git"
   },
   "bugs": {
-    "url": "https://github.com/thejellyfish/risky-email/issues"
+    "url": "https://github.com/thejellyfish/unsafe-email/issues"
   },
-  "homepage": "https://github.com/thejellyfish/risky-email#readme",
+  "homepage": "https://github.com/thejellyfish/unsafe-email#readme",
   "publishConfig": {
     "access": "public"
   },
