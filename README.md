@@ -1,46 +1,46 @@
-[![Version](https://img.shields.io/npm/v/@jollie/risky-email)](https://www.npmjs.com/package/@jollie/risky-email)
-[![Licence](https://img.shields.io/npm/l/@jollie/risky-email)](https://en.wikipedia.org/wiki/MIT_license)
-[![Build](https://img.shields.io/travis/thejellyfish/risky-email)](https://travis-ci.org/github/thejellyfish/risky-email)
-[![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/risky-email)](https://codecov.io/gh/thejellyfish/risky-email)
-[![Downloads](https://img.shields.io/npm/dt/@jollie/risky-email)](https://www.npmjs.com/package/@jollie/risky-email)
+[![Version](https://img.shields.io/npm/v/@jollie/unsafe-email)](https://www.npmjs.com/package/@jollie/unsafe-email)
+[![Licence](https://img.shields.io/npm/l/@jollie/unsafe-email)](https://en.wikipedia.org/wiki/MIT_license)
+[![Build](https://img.shields.io/travis/thejellyfish/unsafe-email)](https://travis-ci.org/github/thejellyfish/unsafe-email)
+[![Coverage](https://img.shields.io/codecov/c/github/thejellyfish/unsafe-email)](https://codecov.io/gh/thejellyfish/unsafe-email)
+[![Downloads](https://img.shields.io/npm/dt/@jollie/unsafe-email)](https://www.npmjs.com/package/@jollie/unsafe-email)
 
 __*for internal use only - Draft idea to check trustworthiness of email account*__
 
-# risky-email
+# unsafe-email
 Check if email is from disposable provider or has no DNS MX record
 
 ### Install
 
 ```bash
-yarn add @jollie/risky-email
+yarn add @jollie/unsafe-email
 ```
 or
 ```bash
-npm install @jollie/risky-email
+npm install @jollie/unsafe-email
 ```
 ### Usage
 
 ```javascript
-const isRiskyEmail = require('@jollie/risky-email');
+const isTricky = require('@jollie/unsafe-email');
 
 // Diposable email 
-// Output "Risky email : Disposable email address"
-isRiskyEmail('contact@yopmail.com')
-  .then(() => console.log('Not risky'))
-  .catch(error => console.log(`Risky email : ${error.message}`);
+// Output "Unsafe email : Disposable email address"
+isTricky('contact@yopmail.com')
+  .then(() => console.log('Looks good'))
+  .catch(error => console.log(`Unsafe email : ${error.message}`);
   
 // Non-existent domain 
-// Output "Risky email : queryMx ENOTFOUND he-llo-w-orld.com"
-isRiskyEmail('contact@he-llo-w-orld.com')
-  .then(() => console.log('Not risky'))
-  .catch(error => console.log(`Risky email : ${error.message}`);
+// Output "Unsafe email : queryMx ENOTFOUND he-llo-w-orld.com"
+isTricky('contact@he-llo-w-orld.com')
+  .then(() => console.log('Looks good'))
+  .catch(error => console.log(`Unsafe email : ${error.message}`);
     
-// Valid email -> Output "Not risky"
-isRiskyEmail('contact@google.com')
-  .then(() => console.log('Not risky'))
-  .catch(error => console.log(`Risky email : ${error.message}`);
+// Valid email -> Output "Looks good"
+isTricky('contact@google.com')
+  .then(() => console.log('Looks good'))
+  .catch(error => console.log(`Unsafe email : ${error.message}`);
 ```
 
 ### Return value
 
-Promise resolved with the email or rejected if risky email
+Promise resolved with the email or rejected if unsafe email
