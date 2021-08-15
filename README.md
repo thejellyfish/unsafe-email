@@ -21,22 +21,22 @@ npm install @jollie/unsafe-email
 ### Usage
 
 ```javascript
-const isTricky = require('@jollie/unsafe-email');
+const isUnsafeEmail = require('@jollie/unsafe-email');
 
 // Diposable email 
 // Output "Unsafe email : Disposable email address"
-isTricky('contact@yopmail.com')
+isUnsafeEmail('contact@yopmail.com')
   .then(() => console.log('Looks good'))
   .catch(error => console.log(`Unsafe email : ${error.message}`);
   
 // Non-existent domain 
 // Output "Unsafe email : queryMx ENOTFOUND he-llo-w-orld.com"
-isTricky('contact@he-llo-w-orld.com')
+isUnsafeEmail('contact@he-llo-w-orld.com')
   .then(() => console.log('Looks good'))
   .catch(error => console.log(`Unsafe email : ${error.message}`);
     
 // Valid email -> Output "Looks good"
-isTricky('contact@google.com')
+isUnsafeEmail('contact@google.com')
   .then(() => console.log('Looks good'))
   .catch(error => console.log(`Unsafe email : ${error.message}`);
 ```
